@@ -4,23 +4,23 @@ create database ohpydb
     ENCODING = 'UTF8';
  
 --create tables under ohpydb schema 
-
+ 
 create table award_categories(
 	category_id serial not null primary key,
 	category_name varchar(100) not null,
-	subcategory_name varchar(100) 
+	subcategory_name varchar(100),
 	constraint award_categories_uk unique (category_name, subcategory_name)
-);
+); 
  
 create table nominees(
 	nominee_id serial not null primary key ,
-	nominee_name varchar(100) not null 
+	nominee_name varchar(100) 
 );
-     
+       
 create table films(
 	film_id serial not null primary key ,
-	film_name varchar(100) not null,
-	release_date date,
+	film_name varchar(500) not null,
+	release_year varchar(10),
 	nominee_id int,  --for director names
 	imdb_score int ,
 	rotten_tomatoes_score int,
@@ -28,14 +28,14 @@ create table films(
 	service2 boolean, --Hulu
 	service3 boolean, --Prime Video
 	service4 boolean, --Disney+
-	first_genre varchar2(100),
-	second_genre varchar2(100),
-	third_genre varchar2(100),
-	fourth_genre varchar2(100),
-	fifth_genre varchar2(100),
-	sixth_genre varchar2(100),
-	seventh_genre varchar2(100),
-	eigth_genre varchar2(100)
+	first_genre varchar(500),
+	second_genre varchar(500),
+	third_genre varchar(500),
+	fourth_genre varchar(500),
+	fifth_genre varchar(500),
+	sixth_genre varchar(500),
+	seventh_genre varchar(500),
+	eigth_genre varchar(500)
     --constraint film_fk1 foreign key(nominee_id) references nominees(nominee_id) 
 );
   

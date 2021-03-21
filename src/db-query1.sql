@@ -1,8 +1,8 @@
 select * from nominees
 
-select * from award_categories
+delete from award_categories
 
-select * from films
+delete from nominees
 
 
-select * from academy_awards
+select * from academy_awards 
