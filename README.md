@@ -3,8 +3,10 @@
 
 ## Background
 
-It seems like a bygone activity of yesteryear, but yes people did go to movie theaters. With the advent of streaming services and well Covid, most of us are enjoying film from the comfort of our couch.  We have many movie options! How do we know if what we select is “quality” and if something is “quality” is it something the average streamer really wants to watch?
-We extracted data from an Academy Awards Database and a Streaming Services database to try and determine: 
+It seems like a bygone activity of yesteryear, but yes people did once go to movie theaters. With the advent of streaming services and, well Covid, most of us have been enjoying films from the comfort of our couch, but there are so many options! How do we know if what we select is “quality” and if something is “quality” is it something that we actually want to watch?
+
+In this project, the team performed ETL on data extracted from an Academy Awards Database and a Streaming Services database to capture information that would enable us to determine: 
+e: 
 
 * Do award winning films actually have high user ratings?
 * Do awards impact film popularity on streaming services?
