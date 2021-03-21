@@ -115,3 +115,7 @@ dmypy.json
 
 #macOS
 .DS_Store
+
+#config file
+config.py
+
